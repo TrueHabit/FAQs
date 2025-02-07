@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TrueHabits - Preguntas Frecuentes</title>
+  <style>
+    /* RESET BÁSICO */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* COLORES PRINCIPALES */
+    :root {
+      --verde-oscuro: #0A4A45;  
+      --verde-claro: #ebf9f7;   
+    }
+
+    /* MARCA DE AGUA “H” EN EL FONDO */
+    html, body {
+      height: 100%;
+      background-color: var(--verde-claro);
+      position: relative;
+    }
+    body::before {
+      content: "H";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 35rem;
+      color: var(--verde-oscuro);
+      opacity: 0.05;   
+      z-index: -1;    
+      pointer-events: none;
+    }
+
+    /* ENCABEZADO */
+    header {
+      background-color: var(--verde-oscuro);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+    }
+    .logo-nav {
+      display: flex;
+      align-items: center;
+    }
+    .logo-nav img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+    .logo-nav h1 {
+      font-size: 1.5rem;
+    }
+
+    /* CONTENEDOR FAQ */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* TÍTULOS GENERALES */
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: var(--verde-oscuro);
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .sub-section-title {
+      font-size: 1.5rem;
+      color: var(--verde-oscuro);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      border-left: 4px solid var(--verde-oscuro);
+      padding-left: 0.5rem;
+    }
+
+    /* FAQ */
+    .faq-item {
+      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+    .faq-item h3 {
+      font-size: 1.1rem;
+      color: var(--verde-oscuro);
+      margin-bottom: 0.5rem;
+    }
+    .faq-item p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      color: #555;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo-nav">
+      <!-- Logo de ejemplo -->
+      <img src="https://raw.githubusercontent.com/TrueHabit/Canjear_TH/main/Logo2.png" alt="Logo TrueHabits">
+      <h1>TrueHabits</h1>
+    </div>
+  </header>
+
+  <!-- SECCIÓN FAQ -->
+  <section id="faq" class="container">
+    <div class="sub-section-title">Preguntas Frecuentes (FAQ)</div>
+
+    <!-- SECCIÓN 1 -->
+    <h2 style="margin-top:1.5rem;">Sección 1: Registro y primeros pasos</h2>
+
+    <div class="faq-item">
+      <h3>1. ¿Cómo me registro en la aplicación?</h3>
+      <p>
+        ¡Es muy sencillo! Cuando entres a la aplicación, verás un botón de registro 
+        en el teclado. Al pulsarlo, se abrirá un formulario donde podrás poner tu 
+        nombre (o el apodo que más te guste), tu edad y cada uno de los hábitos que 
+        quieras empezar a seguir, junto con el objetivo específico que tengas para 
+        cada uno. Después de completarlo, ¡ya estarás listo para empezar!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>2. Ya estoy registrado, ¿qué puedo hacer a continuación?</h3>
+      <p>
+        Una vez completado el registro y definidos tus hábitos, podrás 
+        <strong>registrar tus actividades diarias</strong> relacionadas con esos hábitos. 
+        Por ejemplo, si tu hábito es “salir a correr”, cada vez que corras podrás anotarlo 
+        (mediante voz o texto) para que la aplicación lo registre y te asigne los puntos 
+        correspondientes. Además, podrás preguntar por tu progreso, recibir recordatorios 
+        y ver tus informes semanales. ¡Queremos que te sientas acompañado y motivado en 
+        todo momento!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>3. ¿Cómo registro una actividad o hábito que realicé hoy?</h3>
+      <p>
+        ¡Muy fácil! Abre la aplicación y di o escribe la actividad que acabas 
+        de completar, por ejemplo: “He salido a correr 20 minutos”. La app reconocerá 
+        esa actividad vinculada a tu hábito y te otorgará los puntos correspondientes. 
+        Recuerda que estos puntos varían si el hábito es diario o semanal, y verás reflejado 
+        tu avance inmediatamente en tu perfil.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>4. ¿Cómo se calculan los puntos cuando cumplo mis hábitos?</h3>
+      <p>
+        - <strong>Hábitos diarios:</strong> Si completas el hábito ese día, obtienes 
+          una cantidad fija de puntos (X). <br>
+        - <strong>Hábitos semanales:</strong> Si tu objetivo es cumplirlo varias veces 
+          a la semana, recibirás una cantidad de puntos (Y) al completarlo. Si no lo logras 
+          al 100%, no te preocupes: se te asignarán puntos proporcionales al avance que 
+          hayas logrado. <br><br>
+        ¡Cada pequeña victoria cuenta!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>5. ¿Qué pasa si no cumplo un hábito?</h3>
+      <p>
+        No hay penalizaciones ni malas caras. Si el hábito es diario y no lo haces, 
+        simplemente no recibes puntos. Si es semanal y lo cumples a medias, te llevas 
+        los puntos correspondientes a esa parte de cumplimiento. Recuerda que lo 
+        importante es mantener la motivación y avanzar poco a poco.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>6. ¿Puedo cambiar mis objetivos o hábitos una vez registrados?</h3>
+      <p>
+        ¡Claro que sí! Si en algún momento quieres modificar tus objetivos o 
+        añadir/eliminar hábitos, solo tienes que volver a la sección de registro 
+        y pulsar “Modificar”. Encontrarás la información tal y como la dejaste 
+        la última vez, para que puedas actualizar lo que necesites sin perder nada 
+        de tu progreso anterior.
+      </p>
+    </div>
+
+    <!-- SECCIÓN 2 -->
+    <h2 style="margin-top:2rem;">Sección 2: Puntos, recordatorios y soporte</h2>
+
+    <div class="faq-item">
+      <h3>7. ¿Cómo solicito informes sobre mis hábitos y puntos?</h3>
+      <p>
+        Todas las <strong>semanas</strong>, la app puede generarte un 
+        <strong>informe semanal</strong> con tus puntos acumulados, hábitos cumplidos 
+        y consejos para mejorar. Además, si tienes curiosidad en cualquier momento, 
+        puedes preguntar: “¿Cuánto he corrido esta semana?” o “¿Cuántos puntos llevo 
+        este mes?”. ¡Queremos que siempre estés al día de tu progreso!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>8. ¿Cómo canjeo mis puntos?</h3>
+      <p>
+        Para canjear tus puntos, accede a la página web especial para ello 
+        (la verás en el menú principal de la aplicación). Allí encontrarás 
+        opciones como <strong>Productos, Descuentos y Sorteos</strong>. Solo 
+        elige la recompensa que más te guste, haz clic en “Canjear” y confirma 
+        tu solicitud. Tus puntos se descontarán de tu saldo y recibirás un 
+        mensaje de confirmación.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>9. ¿La aplicación envía recordatorios y notificaciones?</h3>
+      <p>
+        ¡Sí! Pequeños empujones pueden ayudarte a no perder el ritmo. 
+        Recibirás notificaciones y alertas amistosas para que no te olvides 
+        de tus compromisos y para celebrar tus avances. Si lo prefieres, 
+        puedes configurar la frecuencia o desactivarlas por completo en 
+        los ajustes.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>10. ¿Puedo usar la aplicación por voz y por texto?</h3>
+      <p>
+        ¡Exacto! Nuestra intención es que te comuniques con la app 
+        de la forma que te resulte más cómoda. Si tu dispositivo lo 
+        permite, podrás dictar tus hábitos o preguntas en voz alta, 
+        o bien escribirlas directamente. ¡La idea es que todo fluya 
+        de forma natural!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>11. ¿Qué hago si tengo problemas técnicos o más dudas?</h3>
+      <p>
+        Si te surge cualquier problema o duda, estamos aquí para ayudarte. 
+        Puedes escribirnos a través de la sección de “Contacto” en la app, 
+        o enviarnos un correo electrónico a soporte. Nuestro equipo te 
+        responderá lo antes posible para que puedas volver a enfocarte 
+        en tus objetivos.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>12. ¿Qué pasa con mis datos personales?</h3>
+      <p>
+        Tu privacidad es esencial para nosotros. La app solo usa tu nombre 
+        y edad para personalizar la experiencia y enviarte recordatorios 
+        adecuados. No compartiremos tu información con terceros sin tu 
+        consentimiento. Si quieres más detalles, revisa nuestra política 
+        de privacidad.
+      </p>
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <h2 style="margin-top:2rem;">Sección 3: Informes, hábitos avanzados y otras dudas</h2>
+
+    <div class="faq-item">
+      <h3>13. ¿Puedo ver el informe de la semana pasada o de semanas anteriores?</h3>
+      <p>
+        ¡Claro que sí! En la sección de informes puedes revisar los reportes 
+        de semanas anteriores para comparar tu progreso. Verás datos como 
+        puntos acumulados, frecuencia de hábitos cumplidos y tendencias en 
+        el tiempo. De esta forma, podrás seguir tu evolución a largo plazo 
+        y celebrar cada pequeño avance.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>14. ¿Qué hago si un día se me olvida registrar una actividad que realicé?</h3>
+      <p>
+        A veces nos despistamos, ¡es normal! Puedes entrar más tarde y añadir 
+        esa actividad de forma retroactiva, indicando el día y la hora aproximada 
+        en que la completaste. Así mantienes tus estadísticas al día y no pierdes 
+        la motivación de ver tu progreso real reflejado en la app.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>15. ¿Cómo me inspiro para elegir buenos hábitos?</h3>
+      <p>
+        Piensa en aquello que te llene de ilusión o que siempre hayas querido 
+        mejorar: leer 15 minutos, salir a caminar, aprender un nuevo idioma 
+        o beber más agua. Además, en la sección de sugerencias de la app 
+        encontrarás ejemplos de hábitos populares. ¡Déjate guiar por tu curiosidad!
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>16. ¿Puedo compartir mis avances con amigos o en redes sociales?</h3>
+      <p>
+        ¡Sí! Nos encanta contagiar motivación. Dentro de la app hay una opción 
+        para compartir tus progresos en redes sociales o con otros usuarios. 
+        Podrás mostrar cuántos puntos llevas o cuántas veces has cumplido tus 
+        hábitos esta semana. Así, animas a otros a unirse al reto y refuerzas 
+        tu propia constancia.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>17. ¿Cada cuánto se actualizan mis puntos cuando completo una actividad?</h3>
+      <p>
+        La actualización suele ser inmediata. En cuanto la aplicación reconozca 
+        que has registrado una actividad (ya sea por voz o por texto), verás tus 
+        puntos actualizados en tu perfil. Si notas algún retraso, comprueba tu 
+        conexión a internet o contacta con nuestro equipo de soporte.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>18. ¿Tiene algún coste usar la aplicación?</h3>
+      <p>
+        Por ahora, la aplicación es totalmente gratuita. En el futuro podríamos 
+        añadir opciones premium o colaboraciones especiales, pero no te 
+        cobraremos nada sin avisarte con tiempo. Queremos que disfrutes de tu 
+        proceso de mejora sin preocupaciones ni costes ocultos.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 TrueHabits. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
